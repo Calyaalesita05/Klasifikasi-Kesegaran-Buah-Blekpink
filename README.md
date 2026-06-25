@@ -54,3 +54,10 @@ Model *Transfer Learning* berbasis MobileNetV2 menunjukkan performa yang sangat 
 
 ### **Kesimpulan:**
 Berdasarkan hasil eksperimen pengerjaan tugas besar kelompok Blekpink, pengujian klasifikasi kesegaran buah menggunakan metode **Transfer Learning MobileNetV2** terbukti memberikan performa akurasi yang jauh lebih tinggi (96,74%) dan proses konvergensi pelatihan yang lebih cepat dibandingkan dengan model CNN Kustom buatan sendiri (83,67%). Hal ini menunjukkan bahwa pemanfaatan bobot yang sudah terlatih (*pre-trained weights*) dari model skala industri sangat efektif digunakan untuk mendeteksi objek visual buah secara akurat dan konsisten.
+
+### **Sumber dan Deskripsi Dataset:**
+* **Nama Dataset:** Fruits Fresh and Rotten for Classification
+* **Sumber Dataset:** Kaggle
+* **Link Dataset:** https://www.kaggle.com/datasets/sriramr/fruits-fresh-and-rotten-for-classification
+* **Deskripsi Dataset:** Dataset ini berisi gambar-gambar buah yang terbagi menjadi beberapa kelas kategori visual, yaitu: `freshapples`, `freshbananas`, `freshoranges`, `rottenapples`, `rottenbananas`, dan `rottenoranges`.
+* **Pembagian Data:** Dataset sudah dipisahkan ke dalam folder `train/` untuk melatih model dan folder `test/` untuk menguji performa model.
