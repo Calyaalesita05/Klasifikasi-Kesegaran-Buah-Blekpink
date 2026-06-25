@@ -44,13 +44,22 @@ Untuk mendapatkan hasil yang paling optimal, kelompok kami membandingkan dua ars
 Berdasarkan pengujian pada data uji (*test data*), berikut adalah performa dari kedua model:
 
 * **Akurasi Akhir Model CNN Kustom:** 83,67%
+![Confusion Matrix CNN](evaluasi%20cnn.png) 
 * **Akurasi Akhir Model MobileNetV2:** 96,74%
+![Confusion Matrix MobileNetV2](evaluasi%20mobilenetv2.png) 
 
 #### 1. Evaluasi Model CNN Kustom
 Model buatan sendiri ini menghasilkan performa yang cukup baik dengan rata-rata *F1-score* sebesar 0,84. Nilai terbaik didapatkan pada kelas `freshbananas` (F1-score: 0,98), sementara model masih sedikit kesulitan membedakan kelas `freshoranges` karena nilai *recall*-nya berada di angka 0,63 (banyak buah jeruk segar yang salah tertebak sebagai jeruk busuk).
 
 #### 2. Evaluasi Model MobileNetV2
 Model *Transfer Learning* berbasis MobileNetV2 menunjukkan performa yang sangat luar biasa dan presisi. Rata-rata nilai *F1-score* mencapai 0,97. Model ini hampir sempurna dalam mengenali seluruh kelas gambar buah, dengan nilai F1-score tertinggi pada kelas `freshapples` dan `freshbananas` yang menyentuh angka 0,99. Kesalahan tebakan pada *Confusion Matrix* model ini sangat minim di semua kelas.
+
+#### 3. Grafik Hasil Pelatihan (Accuracy & Loss)
+* **Grafik Model CNN Kustom:**
+![Grafik CNN](Visual%20Result%20CNN.png)
+
+* **Grafik Model MobileNetV2:**
+![Grafik MobileNetV2](Visual%20Result%20MobileNetV2.png)
 
 ### **Kesimpulan:**
 Berdasarkan hasil eksperimen pengerjaan tugas besar kelompok Blekpink, pengujian klasifikasi kesegaran buah menggunakan metode **Transfer Learning MobileNetV2** terbukti memberikan performa akurasi yang jauh lebih tinggi (96,74%) dan proses konvergensi pelatihan yang lebih cepat dibandingkan dengan model CNN Kustom buatan sendiri (83,67%). Hal ini menunjukkan bahwa pemanfaatan bobot yang sudah terlatih (*pre-trained weights*) dari model skala industri sangat efektif digunakan untuk mendeteksi objek visual buah secara akurat dan konsisten.
